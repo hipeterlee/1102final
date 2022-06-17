@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/backstage_member.css">
+    <script src="./script/backstage_member.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--匯入Boostrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!--匯入JQuery File-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/326893e4cd.js" crossorigin="anonymous"></script>
+    <!--Font Awesome(Icon)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <!--匯入GOOGLE FONT-->
+    <title>PF. DIOR</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+</style>
+<!--匯入字型-->
+
+<body>
+    <!--導覽-->
+    <header>
+        <div class="container-fluid" id="headerRow2">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbarRow2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" style="width: 100px;height: 100px;">
+                        <img src=picture/dior.png style="max-width: 150px; min-height: 60px; margin-top: 15px;" >
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 50px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="backstage_member.html"><strong
+                                        id="navInnerText">會員管理系統</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="backstage_order.html"><strong
+                                        id="navInnerText">訂單管理系統</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="backstage_product.html"><strong
+                                        id="navInnerText">商品管理系統</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="d-flex" id="means">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="padding-left: 70px;position: relative;height: 50px;">
+                        <button class="btn btn-outline-success" type="submit" style="position: absolute;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href=#><i class="far fa-heart"></i></a>
+                        <a href=cart.html><i class="fas fa-shopping-cart"></i></a>
+                        <a href=user.html><i class="fa-solid fa-user"></i></a>
+
+
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+    <hr>
+
+    <section id="intro">
+        <div id="memberBox">
+            <div id="memberInitBtnFormBox" >
+                <div id="memberFormTitleBox">
+                    <p>會員姓名</p>
+                    <p>電子郵件</p>
+                    <p>會員密碼</p>
+                    <p>性別</p>
+                    <p>生日</p>
+                </div>
+                <button type="button" onclick="initBtn()">新增</button>
+            </div>
+            <div id="memberFormBox">
+                <div id="memberFormRowBox" class="memberFormRow">
+                    <p id="memberId"></p>
+                    <input class="memberName" type="text" style="margin-right: 4.5%;" value="金泰亨" >
+                    <input class="memberMail" type="email" style="width: 15%;margin-right: 5.5%;" value="20200222@gmail.com">
+                    <input class="memberPassword" type="password" value="123123123123123" style="margin-right: 6%;">
+                    <input class="memberGender" type="text" value="男" style="margin-right: 4%;">
+                    <input class="memberBirth" type="text" value="2000/10/15" style="margin-right: 3%;">
+                    <button type="button" style="    margin-right: 3%;
+                    border: 1px solid lightgray;
+                    padding: 10px;
+                    font-size: 17px;
+                    outline: none;
+                    width: 5%;" onclick="deleteBtn()">刪除</button>
+                    <button type="button" style="
+                    border: 1px solid lightgray;
+                    padding: 10px;
+                    font-size: 17px;
+                    outline: none;
+                    width: 5%;" onclick="changeBtn()">修改</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer style="color:white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <h5 style="color:white">OURS</h5>
+                    <p style="line-height:35px;"><a href="https://www1.cycu.edu.tw/" style="color:white">- SCHOOL -</a>
+                        <br>
+                        <a href="https://www.dior.com/zh_tw" style="color:white">- DIOR -</a>
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5 style="color:white">FOLLOW DIOR</h5>
+                    <p style="line-height:35px;">
+                        <a href="https://www.instagram.com/dior/" style="color:white">INSTAGRAM</a><br>
+                        <a href="https://www.facebook.com/Dior/" style="color:white">FACEBOOK</a><br>
+                        <a href="https://www.twitter.com/dior/" style="color:white">TWITTER</a>
+
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <span style="color:white"></span>隱私條款 | 條款及細則 | 2022 © PF. DIOR
+
+                        <div class="credit-card">
+                            <img src="https://shoplineimg.com/assets/footer/card_paypal.png">&nbsp;
+                            <img src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png">&nbsp;
+                            <img src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png">&nbsp;
+                            <img src="https://shoplineimg.com/assets/footer/card_ecpay.png">&nbsp;
+                        </div>
+
+                    </p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <h5>聯絡我們</h5>
+                    <p style="line-height:35px;">
+                        <a href="mailto:hn4507@gmail.com" style="color:white">onlinecare.my@PFdior.com.my</a><br>
+                        『 週一至週六 』<br>
+                        10:00~12:00/14:00~18:00
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+
+</html>

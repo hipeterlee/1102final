@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="css/user.css">
+    
+</head>
+
+
+<body>
+<div class="wrapper">
+    <div class="title-text">
+        <div class="title login">登入</div>
+        <div class="title signup">註冊</div>
+    </div>
+  
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked>
+            <input type="radio" name="slider" id="signup">
+            <label for="login" class="slide login">登入介面</label>
+            <label for="signup" class="slide signup">註冊介面</label>
+            <div class="slide-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="#" class="login">
+                <div class="field">
+                    <input type="text" placeholder="信箱" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="密碼" required>
+                </div>
+                <div class="pass-link"><a href="#">忘記密碼?</a></div>
+                <div class="field">
+                    <input type="submit" value="登入">
+                </div>
+                <div class="signup-link">還不是會員? <a href="#">立即註冊</a></div>
+            </form>
+            <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="信箱" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="設定密碼" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="姓名" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="性別" required>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="生日" required>
+                </div>
+               
+                <div class="field">
+                    <input type="submit" value="註冊">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    const loginForm = document.querySelector("form.login");
+    const signupForm = document.querySelector("form.signup");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector(".signup-link a");
+    const loginText = document.querySelector(".title-text .login");
+    const signupText = document.querySelector(".title-text .signup");
+    signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft ="-50%";
+        loginText.style.marginLeft ="-50%";
+    });
+    loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft ="0%";
+        loginText.style.marginLeft ="0%";
+    });
+    signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+    });
+   
+</script>
+</body>
+
+</html>

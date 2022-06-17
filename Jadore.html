@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sauvage.css">
+    <script src="script/sauvage.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--匯入Boostrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--匯入JQuery File-->
+
+    <script src="https://kit.fontawesome.com/326893e4cd.js" crossorigin="anonymous"></script>
+    <!--Font Awesome(Icon)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <!--匯入GOOGLE FONT-->
+    <title>J'adore</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+</style>
+<!--匯入字型-->
+
+<body style="background-color: rgb(253, 242, 179);">
+    <!--導覽-->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="picture/dior.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                女性香氛
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="Jadore.html">J'adore</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="MissDior.html">Miss Dior</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                男性香氛
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="sauvage.html">Sauvage</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="homme.html">Dior Homme</a>
+                            </div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                香氛簡介
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">J'adore</a>
+                                <a class="dropdown-item" href="#">Miss Dior</a>
+                                <a class="dropdown-item" href="#">Sauvage</a>
+                                <a class="dropdown-item" href="#">Dior Homme</a>
+                        </li>
+                        <li class="nav-item" style="margin:0 7px">
+                            <a class="nav-link" href="#">會員資料</a>
+                        </li>
+                        <li class="nav-item" style="margin:0 7px">
+                            <a class="nav-link" href="about_us.html">關於我們</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" id="means">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="padding-left: 70px;position: relative;height: 50px;">
+                        <button class="btn btn-outline-success" type="submit" style="position: absolute;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href=#><i class="far fa-heart"></i></a>
+                        <a href=#><i class="fas fa-shopping-cart"></i></a>
+                        <a href=user.html><i class="fa-solid fa-user"></i></a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <div class="marquee">
+        <span> 「DIOR 6月活動」 滿$6,600享DIOR托特包; 全站$2,000免運，再享海洋度假香氛吊飾！</span>
+    </div>
+    <div class="container position-relative text-center"  style="z-index: 0;">
+        <header class="position-relative text-center text-white mb-5">
+            <img src="picture/jadore.jpg" class="w-100" alt="Banner">
+        </header>
+    </div>
+
+    <section id="Product" class="jumbotron text-center bg-light">
+        <h3>J'adore
+        </h3>
+        <P>J'ADORE經典花香展現各種不同的迷人面貌，完美融合所有嬌艷花朵的香氣，馥郁感性，是為女性大膽率性獻上的一曲讚歌。
+        </P>
+    </section>
+    <p>香水<p>
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="img-container">
+                                    <a href="product7.html"><img src="./picture/J'ADORE1.webp" alt="" class="image card-img-top" style="height: 450px;"></a>
+                                    <div class="overlay">
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                                <div class="card-body"><a href="product7.html">
+                                    <h5 class="card-title text-center">J'ADORE極蘊香氛</h5>
+                                    <p class="card-text">香氛-柑橘、花香與木質香調</p></a>
+                                    <h6 class="card-sibtitle mb-2 text-muted">NT$3,290.00 - 瓶裝 100ml</h6>
+                                    <div class="rating d-flex mt-1">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>(92則回覆)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="img-container">
+                                    <a href="product8.html"><img src="./picture/J'ADORE3.webp" alt="" class="image card-img-top" style="height: 450px;"></a>
+                                    <div class="overlay">
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                                <div class="card-body"><a href="product8.html">
+                                    <h5 class="card-title text-center">J'adore</h5>
+                                    <p class="card-text">淡香水</p></a>
+                                    <h6 class="card-sibtitle mb-2 text-muted">NT$3,490.00 - 瓶裝 100ml</h6>
+                                    <div class="rating d-flex mt-1">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>(67則回覆)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="img-container">
+                                    <a href="product9.html"><img src="./picture/product9-1.jpg" alt="" class="image card-img-top" style="height: 450px;"></a>
+                                    <div class="overlay">
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                                <div class="card-body"><a href="product9.html">
+                                    <h5 class="card-title text-center">J'adore</h5>
+                                    <p class="card-text">頂級金緻香精</p></a>
+                                    <h6 class="card-sibtitle mb-2 text-muted">NT$8,900.00 - 瓶裝 100ml</h6>
+                                    <div class="rating d-flex mt-1">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>(73則回覆)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="parttop">
+        <p class="font1">SAUVAGE 曠野之心</p>
+        <div class="ad">
+            <img src="picture/sauvage_ad.jpg" alt="">
+        </div>
+        <p class="font2">以曠野大地為靈感，SAUVAGE 曠野之心，結合無比清新的香氣，狂野卻又尊貴。
+        </p>
+    </div>
+    <hr>
+    <p class="font3">香氛</p> -->
+
+
+            <section aria-label="item">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button next" data-carousel-button="prev" id="button_carousel">
+                        &#8250;</button>
+                    <button class="carousel-button prev" data-carousel-button="next"> &#8249;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="picture/J'ADOREad1.webp" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="picture/J'ADOREad2.webp" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="picture/J'ADOREad3.webp" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="picture/J'ADOREad4.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        <div class="introduce">      
+        <p><br>Dior 在1999年推出了全新的華麗女性時尚香氛J'adore，迪奧首席調香師François Demachy將經典花香調幻化為前所未見的迷人作品，散發神秘謎樣氣息。J’adore創造出一朵在自然界不存在的理想花朵，更有著純淨、永恆的造型，為Dior的經典代表作品之一，高雅而迷人。細長的瓶頸，用金色的領巾圍了一周展現獨一無二的個性，更加顯得高貴不凡也流露出難以抵擋的醉人魅力。金碧輝煌的獨特瓶身設計，光滑透明沒有一點修飾，J'adore這幾個字母很美地隱藏在水晶瓶蓋上。很難用言語去形容J'adore的華麗與優雅，在忙碌的現代生活中。</p>
+        </div>
+   
+            <button id="back-to-top-btn"><i class="fa-solid fa-angles-up"></i></button>
+            <footer style="color:white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <h5 style="color:white">OURS</h5>
+                            <p style="line-height:35px; text-align: left;"><a href="https://www1.cycu.edu.tw/"
+                                    style="color:white">-
+                                    SCHOOL -</a>
+                                <br>
+                                <a href="https://www.dior.com/zh_tw" style="color:white">- DIOR -</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h5 style="color:white">FOLLOW DIOR</h5>
+                            <p style="line-height:35px;">
+                                <a href="https://www.instagram.com/dior/" style="color:white">INSTAGRAM</a><br>
+                                <a href="https://www.facebook.com/Dior/" style="color:white">FACEBOOK</a><br>
+                                <a href="https://www.twitter.com/dior/" style="color:white">TWITTER</a>
+
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <span style="color:white"></span>隱私條款 | 條款及細則 | 2022 © PF. DIOR
+
+                                <div class="credit-card">
+                                    <img src="https://shoplineimg.com/assets/footer/card_paypal.png">&nbsp;
+                                    <img src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png">&nbsp;
+                                    <img src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png">&nbsp;
+                                    <img src="https://shoplineimg.com/assets/footer/card_ecpay.png">&nbsp;
+                                </div>
+
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <h5>聯絡我們</h5>
+                            <p style="line-height:35px; text-align: right;">
+                                <a href="mailto:hn4507@gmail.com"
+                                    style="color:white">onlinecare.my@PFdior.com.my</a><br>
+                                『 週一至週六 』<br>
+                                10:00~12:00/14:00~18:00
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+
+</body>
+
+
+</html>

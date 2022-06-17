@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 300px 300px 300px 300px;
+
+}
+
+.navbar {
+    z-index: 99;
+}
+
+.sliderFade {
+    animation: fade 0.5s ease;
+}
+
+.sliderThumb,
+.sliderMainImage {
+    cursor: pointer;
+}
+
+@keyframs fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header nav img {
+    width: 190px;
+}
+
+
+#means button {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    color: gray;
+    transition: 300ms ease-in-out;
+}
+
+#means button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#means button i {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#means button i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#means a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .2);
+}
+
+#means i {
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+#means i:hover {
+    color: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+
+
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    color: #808080;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #808080;
+    color: lightgray;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+
+    }
+}
+
+footer {
+    background-color: #121A2F;
+    border-top: 1px solid LightGrey;
+    padding: 80px 0px;
+    font-style: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+.credit-card {
+    object-position: center;
+    width: 106%;
+
+}
+
+
+.marquee {
+
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+}
+
+.marquee span {
+
+    font-size: 1.5rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    animation: animate 22s linear infinite;
+    padding-left: 100%;
+    display: inline-block;
+    transition: ease-in-out;
+}
+
+.marquee span:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+/*----------cart items  ----------------*/
+#page {
+    padding: 5% 10%;
+
+}
+
+.cardleft {
+
+    margin-left: 250px;
+}
+
+
+.img-style {
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.img-style img {
+    max-height: 320px;
+    min-width: 400px;
+    margin-bottom: 30px;
+}
+
+.font-style {
+    margin-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30px;
+}
+
+.font-style span {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.font-style p {
+    font-size: 16px;
+    font-weight: 100;
+}
+.input-style{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 120px;
+    margin-left: 800px;
+    position: absolute;
+}
+
+.cart-remove {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 900px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10%;
+    max-width: 80px;
+    max-height: 60px;
+    border: none;
+}
+
+.cart-remove:hover {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}
+
+
+#shopCartRight {
+    width: 45%;
+}
+
+#shopCartRightTitleBox {
+    font-size: 40px;
+}
+
+#computeBox {
+    font-size: 23px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5%;
+    width: 95%;
+}
+
+#shopCartLeftText {
+    width: 50%;
+}
+
+.totalprice-style{
+    
+
+    text-align: right;
+}
+#shopCartRightText {
+    text-align: right;
+    font-weight: 500;
+    width: 50%;
+    color: gray;
+}
+
+#totalBox {
+    width: 95%;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5%;
+    padding-bottom: 20%;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#checkoutBox {
+    text-align: center;
+    padding: 50px;
+}
+
+#checkoutBox button {
+    padding: 3%;
+    font-size: 23px;
+    background-color: white;
+    border: 1px solid #003366;
+    outline: none;
+    border-radius: 15px;
+    width: 80%;
+}
+
+#checkoutBox button:hover {
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+}

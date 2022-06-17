@@ -1,0 +1,434 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header nav img {
+    width: 190px;
+}
+
+.carousel {
+
+    height: 70vh;
+    position: relative;
+}
+
+.carousel>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+#means button {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    color: gray;
+    transition: 300ms ease-in-out;
+}
+
+#means button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+#means button i {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#means button i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#means a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .2);
+}
+
+#means i {
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+#means i:hover {
+    color: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+
+#top3 {
+    border-bottom: 1px solid lightgray;
+}
+
+
+#bestseller_Box {
+
+    padding: 2% 5%;
+}
+
+#bestseller_TitleBox {
+
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#bestseller_TitleBox p {
+
+    font-size: 60px;
+    font-family: 'Noto Serif Display', serif;
+}
+
+#bestseller_ListBox {
+    padding: 0;
+    text-align: center;
+}
+
+.bestseller_List {
+
+    cursor: pointer;
+}
+
+
+.bestseller_List {
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 210px;
+    max-width: 400px;
+    min-height: 300px;
+    max-height: 400px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background: rgba(0, 0, 0, .8);
+
+}
+
+.bestseller_List *,
+.bestseller_List:before,
+.bestseller_List:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.bestseller_List img {
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    vertical-align: top;
+    background-color: white;
+}
+
+.bestseller_List:before,
+.bestseller_List:after {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+
+.bestseller_List:before {
+    width: 0;
+    height: 1px;
+}
+
+.bestseller_List:after {
+    height: 0;
+    width: 1px;
+}
+
+.bestseller_List figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 15px 20px;
+}
+
+.bestseller_List h3,
+.bestseller_List h4 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: normal;
+    opacity: 0;
+}
+
+.bestseller_List h4 {
+    font-size: .1em;
+    text-transform: uppercase;
+}
+
+.bestseller_List a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.bestseller_List:hover img,
+.bestseller_List.hover img {
+    zoom: 1;
+    filter: alpha(opacity=20);
+    -webkit-opacity: 0.2 ease-in-out forwards;
+    opacity: 0.2;
+}
+
+.bestseller_List:hover h3,
+.bestseller_List.hover h3 {
+    -webkit-transition-delay: 0.30s;
+    transition-delay: 0.30s;
+    opacity: 1;
+}
+
+.bestseller_List:hover h4,
+.bestseller_List.hover h4 {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+    opacity: 1;
+}
+
+#back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    color: #808080;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+    background-color: #808080;
+    color: lightgray;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+.intopho1 {
+    padding: 8em;
+}
+
+.intofo1 {
+    font-size: 20px;
+    padding-right: 8em;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.intopho2 {
+    padding: 8em;
+    opacity: 45%;
+}
+
+.intofo2 {
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+.intofo3 {
+    padding-left: 8em;
+}
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+
+    }
+}
+
+footer {
+    background-color: #121A2F;
+    border-top: 1px solid LightGrey;
+    padding: 80px 0px;
+    font-style: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+.credit-card {
+    object-position: center;
+    width: 106%;
+}
+
+
+.marquee {
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.marquee span {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    animation: animate 22s linear infinite;
+    padding-left: 100%;
+    display: inline-block;
+    transition: ease-in-out;
+}
+
+.marquee span:hover {
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+table,
+tr,
+td {
+    font-family: 'Noto Sans TC', sans-serif;
+    height: 0px;
+    font-size: larger;
+}
+
+td {
+    width: 10%;
+    text-align: center;
+}
+
+.img {
+    border-radius: 50%;
+    width: 75%;
+    margin: 10px;
+}
+
+.table {
+    font-size: 16px;
+    padding: 20px;
+}
+
+.blank {
+    margin: 35px;
+    padding: 1px 35px 10px 35px;
+    z-index: -1;
+    border-radius: 3%;
+}
+
+.about {
+    border-radius: 50%;
+    width: 49%;
+    float: center;
+}
+
+hr{
+    width: 90%; 
+}
+
+.size{
+    color: darkblue;
+    font-size: large;
+    padding: 0px 25px 0px 25px;
+}

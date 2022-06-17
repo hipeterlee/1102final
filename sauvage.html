@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sauvage.css">
+    <script src="script/sauvage.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--匯入Boostrap CSS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!--匯入JQuery File-->
+
+    <script src="https://kit.fontawesome.com/326893e4cd.js" crossorigin="anonymous"></script>
+    <!--Font Awesome(Icon)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <!--匯入GOOGLE FONT-->
+    <title>sauvage-曠野之心</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+</style>
+<!--匯入字型-->
+
+<body style="background-color: rgb(218, 246, 255);">
+    <!--導覽-->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="picture/dior.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                女性香氛
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">J'adore</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Miss Dior</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                男性香氛
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="./sauvage.html">Sauvage</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Dior Homme</a>
+                            </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="allproduct.html" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    香氛簡介
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="allproduct.html#mark-1">Sauvage</a>
+                                    <a class="dropdown-item" href="allproduct.html#mark-2">Dior Homme</a>
+                                    <a class="dropdown-item" href="allproduct.html#mark-3">Miss Dior</a>
+                                    <a class="dropdown-item" href="allproduct.html#mark-4">J'adore</a>
+                            </li>
+                        <li class="nav-item" style="margin:0 7px">
+                            <a class="nav-link" href="#">會員資料</a>
+                        </li>
+                        <li class="nav-item" style="margin:0 7px">
+                            <a class="nav-link" href="#">關於我們</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" id="means">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="padding-left: 70px;position: relative;height: 50px;">
+                        <button class="btn btn-outline-success" type="submit" style="position: absolute;">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <a href=#><i class="far fa-heart"></i></a>
+                        <a href=#><i class="fas fa-shopping-cart"></i></a>
+                        <a href=user.html><i class="fa-solid fa-user"></i></a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <div class="marquee">
+        <span> 「DIOR 6月活動」 滿$6,600享DIOR托特包; 全站$2,000免運，再享海洋度假香氛吊飾！</span>
+    </div>
+    <hr>
+    <div class="container position-relative text-center" style="z-index: 0;">
+        <header class="position-relative text-center text-white mb-5">
+            <img src="picture/sauvage_ad.jpg" class="w-100" alt="Banner">
+        </header>
+    </div>
+
+    <section id="Product" class="jumbotron text-center bg-light">
+        <h3>SAUVAGE 曠野之心
+        </h3>
+        <P>Sauvage is an act of creation inspired by wide-open spaces. A composition marked by a raw freshness, powerful
+            and noble all at once.
+        </P>
+    </section>
+    <p>香水<p>
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="img-container">
+                                    <img src="./picture/product1.jpg" alt="" class="image card-img-top">
+                                    <div class="overlay">
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-heart"></i></button>
+
+                                    </div>
+                                </div>
+                                <div class="card-body"><a href="product1.html">
+                                    <h5 class="card-title text-center">Sauvage Elixir</h5>
+                                    <p class="card-text">淬鍊香精-辛辣、清新柑橘木質調</p></a>
+                                    <h6 class="card-sibtitle mb-2 text-muted">NT$3,790.00 - 瓶裝 60ml</h6>
+                                    <div class="rating d-flex mt-1">
+
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>(94則回覆)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="img-container">
+                                    <img src="./picture/product2.jpg" alt="" class="image card-img-top">
+                                    <div class="overlay">
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-heart"></i></button>
+                                    </div>
+                                </div>
+                                <div class="card-body"><a href="product2.html">
+                                    <h5 class="card-title text-center">Sauvage Parfum</h5>
+                                    <p class="card-text">皮革香氣略帶活潑氣息柑橘</p></a>
+                                    <h6 class="card-sibtitle mb-2 text-muted">NT$2,980.00 - 瓶裝 60ml</h6>
+                                    <div class="rating d-flex mt-1">
+
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>(37則回覆)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-3">
+                            <div class="card">
+                                <div class="img-container">
+                                    <img src="./picture/product3.jpg" alt="" class="image card-img-top">
+                                    <div class="overlay">
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-cart-plus mr-2"></i>Add to cart</button>
+                                        <button class="btn btn-outline-secondary btn-sm"><i
+                                                class="fas fa-heart"></i></button>
+
+                                    </div>
+                                </div>
+                                <div class="card-body"><a href="product3.html">
+                                    <h5 class="card-title text-center">Sauvage Spray </h5>
+                                    <p class="card-text">顯著柑橘果香與微妙的椒香譜出獨特的氣息</p></a>
+                                    <h6 class="card-sibtitle mb-2 text-muted">NT$2,400.00 - 瓶裝 30ml</h6>
+                                    <div class="rating d-flex mt-1">
+
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                        </span>
+                                        <span>(14則回覆)</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="parttop">
+        <p class="font1">SAUVAGE 曠野之心</p>
+        <div class="ad">
+            <img src="picture/sauvage_ad.jpg" alt="">
+        </div>
+        <p class="font2">以曠野大地為靈感，SAUVAGE 曠野之心，結合無比清新的香氣，狂野卻又尊貴。
+        </p>
+    </div>
+    <hr>
+    <p class="font3">香氛</p> -->
+
+
+            <section aria-label="item">
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button next" data-carousel-button="prev" id="button_carousel">
+                        &#8250;</button>
+                    <button class="carousel-button prev" data-carousel-button="next"> &#8249;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="picture/sauvage_ad.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="picture/sauvage_big.jpg" alt="">
+                        </li>
+                        <li class="slide">
+                            <img src="picture/sauvage-crs.jpg" alt="Sauvage">
+                        </li>
+                        <li class="slide">
+                            <img src="picture/sauvage_ad1.jpg" alt="Sauvage">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        <div class="introduce">      
+        <p><br>Dior 迪奧在1966年推出Dior Sauvage，延續這款經典男香的精隨，2015年迪奧首席調香師 François推出全新香氛－SAUVAGE曠野之心淡香水，創作的曠野之心淡香水，是獻給大自然的歌頌，這款香氛的鉅作之美，來自於其原材料的珍世稀缺。獨一無二的卡拉布里亞佛手柑，其生長的土壤長期沐浴在卡拉布里亞的暖陽之下，透過迪奧與當地種植園區緊密合作，以最貼近自然古法的方式培育、摘採、嚴選萃取，結合長期專業知識，完美演繹卡拉布里亞佛手柑的香氣，精雕出屬於迪奧的男士香水，其靈感來自於在遼闊的原野上，炙熱的陽光加上藍色天空，一望無際的岩石，形成了一幅迷人而粗曠的景觀。
+        </p>
+        </div>
+   
+            <button id="back-to-top-btn"><i class="fa-solid fa-angles-up"></i></button>
+            <footer style="color:white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <h5 style="color:white">OURS</h5>
+                            <p style="line-height:35px; text-align: left;"><a href="https://www1.cycu.edu.tw/"
+                                    style="color:white">-
+                                    SCHOOL -</a>
+                                <br>
+                                <a href="https://www.dior.com/zh_tw" style="color:white">- DIOR -</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h5 style="color:white">FOLLOW DIOR</h5>
+                            <p style="line-height:35px;">
+                                <a href="https://www.instagram.com/dior/" style="color:white">INSTAGRAM</a><br>
+                                <a href="https://www.facebook.com/Dior/" style="color:white">FACEBOOK</a><br>
+                                <a href="https://www.twitter.com/dior/" style="color:white">TWITTER</a>
+
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <span style="color:white"></span>隱私條款 | 條款及細則 | 2022 © PF. DIOR
+
+                                <div class="credit-card">
+                                    <img src="https://shoplineimg.com/assets/footer/card_paypal.png">&nbsp;
+                                    <img src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png">&nbsp;
+                                    <img src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png">&nbsp;
+                                    <img src="https://shoplineimg.com/assets/footer/card_ecpay.png">&nbsp;
+                                </div>
+
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <h5>聯絡我們</h5>
+                            <p style="line-height:35px; text-align: right;">
+                                <a href="mailto:hn4507@gmail.com"
+                                    style="color:white">onlinecare.my@PFdior.com.my</a><br>
+                                『 週一至週六 』<br>
+                                10:00~12:00/14:00~18:00
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+
+</body>
+
+
+</html>
